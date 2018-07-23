@@ -14,19 +14,23 @@
             document.getElementById("ifYes").style.display = "none";
         }
     }
+
+    function success() {
+        swal("hey", "etc", "success");
+    }
 </script>
 </head>
 <body onload="startTime()">
 <?php include("header.php");?><br>
-<form method="post" action="mailto:" enctype="text/plain">
+<form method="post" enctype="text/plain" id="contact_form">
     <div class="container bg-light">
         <h1 class="text-center">Contact me about anything!</h1>
         <label for="name">Name</label>
-        <input type="text" class="form-control" name="Name: ">
+        <input type="text" class="form-control" name="Name" id="name">
         <label for="email">E-Mail</label>
-        <input type="email" class="form-control" name="E-Mail: ">
+        <input type="email" class="form-control" name="E-Mail" id="email">
         <label for="email">Subject</label><br>
-        <select onchange="yesnoCheck(this);" class="form-control">
+        <select onchange="yesnoCheck(this);" class="form-control" id="subject" name="subject">
             <option value="Twitch">Twitch related</option>
             <option value="Programming">Programming related</option>
             <option value="other">Other...</option>
@@ -35,8 +39,8 @@
             <label>Other Subject:</label><br><input type="text" class="form-control">
         </div><br>
         <label for="email">Message</label>
-        <textarea cols="10" rows="10" class="form-control"></textarea><br>
-        <button type="submit" class="btn btn-primary">Send E-Mail</button   
+        <textarea cols="10" rows="10" class="form-control" id="message" name="message"></textarea><br>
+        <button type="submit" class="btn btn-primary">Send E-Mail</button>  
     </div>
 </form>
     <?php include("footer.php");?>

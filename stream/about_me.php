@@ -56,7 +56,7 @@
                <h5 class="card-title text-primary">Question #2</h5>
                <h6 class="card-title text-primary">Where am I from?</h6>
                <hr>
-               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consequatur.</p>
+               <p class="card-text">"My Mom" - <a href="https://twitch.tv/ko_badg" target="_blank">ko_badg</a></p>
             </div>
          </div>
       </div>
@@ -66,7 +66,7 @@
                <h5 class="card-title text-primary">Question #3</h5>
                <h6 class="card-title text-primary">What do I like to do?</h6>
                <hr>
-               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consequatur.</p>
+               <p class="card-text">"Your Mom" - <a href="https://twitch.tv/ko_badg" target="_blank">ko_badg</a></p>
             </div>
          </div>
       </div>
@@ -95,9 +95,9 @@
          <div class="card">
             <div class="card-body text-center">
                <h5 class="card-title text-primary">Question #6</h5>
-               <h6 class="card-title text-primary">Can I contact you?</h6>
+               <h6 class="card-title text-primary">Where do you live?</h6>
                <hr>
-               <p class="card-text">Yes, You can contact me about anything really, right <a href="contact.php" target="_blank">Here.</a></p>
+               <p class="card-text">Next to my neighbours.</p>
             </div>
          </div>
       </div>

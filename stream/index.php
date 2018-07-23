@@ -27,6 +27,9 @@ foreach($results as $row) {
                     <blockquote class="text-right">
                         <footer class="blockquote-footer">Written by <cite title="Source Title"><?php echo $row['p_author'];?>.</cite></footer>
                     </blockquote>
+                    <blockquote class="text-left">
+                        <footer class="blockquote-footer">Tags: <?php echo $row['tags'];?></footer>
+                    </blockquote>
              </div>
         </div>
 <?php } ?>

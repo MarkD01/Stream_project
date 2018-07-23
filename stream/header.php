@@ -14,11 +14,12 @@
             <a class="nav-item nav-link text-white" href="portfolio.php">Portfolio</a>
             <a class="nav-item nav-link text-white" href="about_me.php">About Me</a>
             <a class="nav-item nav-link text-white" href="contact.php">Contact</a>
-        <?php if (isset($_SESSION[username])) { ?>
+            <a class="nav-item nav-link text-white" href="store.php">Store</a>
+        <?php if (isset($_SESSION['username'])) { ?>
             <a class="nav-item nav-link text-white" href="n_post.php">Post something new</a>           
         <?php } ?>
         </div>
-        <?php if (isset($_SESSION[username])) { ?> 
+        <?php if (isset($_SESSION['username'])) { ?> 
          <ul class="navbar-nav bg-primary">
              <li class="nav-item"><a href="logout.php" class="nav-link text-white"><i class="fas fa-sign-out-alt" style="color: white;"></i>Logout</a></li>
          </ul>  

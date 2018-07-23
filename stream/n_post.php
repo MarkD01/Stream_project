@@ -18,6 +18,8 @@
         <input type="text" class="form-control" name="p_title">
         <label for="p_author">Post Author</label>
         <input type="text" class="form-control" name="p_author">
+        <label for="p_tag">Tags</label>
+        <input type="text" class="form-control" name="p_tag">
         <label for="p_content">Post Content</label>
         <textarea cols="10" rows="10" class="form-control" name="p_content"></textarea><br>
         <button type="submit" class="btn btn-primary" name="p_add">Add Post</button>        

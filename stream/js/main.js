@@ -28,8 +28,10 @@ $(document).ready(function() {
         var formData = {
             'p_title': $('input[name=p_title]').val(),
             'p_author': $('input[name=p_author]').val(),
+            'p_tag': $('input[name=p_tag]').val(),
             'p_content': $('textarea[name=p_content]').val()
         };
+        console.log(formData);
 
         // process the form
         $.ajax({
@@ -62,5 +64,31 @@ $(document).ready(function() {
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
     });
+    // Email validation
+        $('#contact_form').submit(function(e){
+            e.preventDefault();
+
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var subject = document.getElementById("subject");
+            var message = document.getElementById("message");
+
+            if(name.value=="" || email.value=="" || subject.value=="" || message.value=="") {
+                swal('Error', 'Please fill everything in.', 'error');
+
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: 'sendMail.php',
+                    success: swal('Success', 'E-Mail has been sent, expect a response within 24 hours.', 'success')
+                });
+            }
+        });
+
+            
+    
+
+
 });
 // end of submitting the new form post
+
