@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include("bootstrap.php");?>
 </head>
-<body onload="startTime()">
-<?php include("header.php");?>
+<body>
+<?php $activePage = "about_me"; include("header.php");?>
 <br>
 <div id="carouselExampleIndicators" class="carousel w-50 mx-auto slide" data-ride="carousel">
    <ol class="carousel-indicators">

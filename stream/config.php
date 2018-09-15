@@ -1,6 +1,6 @@
 <?php
 $user = "root";
-$pass = "usbw";
+$pass = "";
 
 $con = new PDO('mysql:host=localhost;dbname=stream_db', $user, $pass);
 ?>

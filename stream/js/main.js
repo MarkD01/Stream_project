@@ -1,26 +1,10 @@
-// Start of Clock
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-
-function checkTime(i) {
-    if (i < 10) { i = "0" + i };
-    return i;
-}
-
-// End of Clock
-
 // submitting new post form
 
 $(document).ready(function() {
-    startTime();
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
     $('#ajaxForm').submit(function (event) {
         $this = $(this);
         // get the form data
@@ -59,8 +43,11 @@ $(document).ready(function() {
                     swal('A problem occured', errorString, 'error');
                 }
                 // here we will handle errors and validation messages
-            });
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
 
+            });
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
     });

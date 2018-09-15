@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Post something new</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php include("bootstrap.php"); ?>
+<?php $activePage = true; include("bootstrap.php"); ?>
 </head>
 <body>
-<?php include("header.php"); ?><br>
-<div id="clock"></div>
+<?php $activePage = "new_post"; include("header.php"); ?><br>
 <form method="post" id="ajaxForm">
     <div class="container bg-light">
         <h1 class="text-center">Add a Post to the Home page!</h1>   

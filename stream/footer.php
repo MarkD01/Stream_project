@@ -3,12 +3,12 @@
       <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
           <a class="btn-floating btn-fb mx-1" href="https://twitch.tv/mark_ed" target="_blank">
-            <i class="fab fa-twitch" style="font-size: 24px;"> </i>
+            <i class="fab fa-twitch fa-3x" data-toggle="tooltip" data-placement="top" title="My Twitch"></i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="btn-floating btn-tw mx-1" href="#">
-            <i class="fab fa-twitter" style="font-size: 24px;"> </i>
+            <i class="fab fa-twitter fa-3x" data-toggle="tooltip" data-placement="top" title="My Twitter"></i>
           </a>
         </li>
       </ul>

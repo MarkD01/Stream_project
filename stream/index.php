@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php include("bootstrap.php"); ?>
 </head>
-<body onload="startTime()">
-<?php include("header.php");?>
+<body>
+
+<?php $activePage = "home"; include("header.php");?>
 <div class="container">
 <?php 
 include("config.php");
@@ -25,7 +26,8 @@ foreach($results as $row) {
                 <hr>
                   <p class="lead"><?php echo $row['p_content'];?></p>
                     <blockquote class="text-right">
-                        <footer class="blockquote-footer">Written by <cite title="Source Title"><?php echo $row['p_author'];?>.</cite></footer>
+                        <footer class="blockquote-footer">Written by <cite title="Source Title"><?php echo $row['p_author'];?>.</cite>
+                        </footer>
                     </blockquote>
                     <blockquote class="text-left">
                         <footer class="blockquote-footer">Tags: <?php echo $row['tags'];?></footer>

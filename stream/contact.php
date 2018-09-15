@@ -20,10 +20,10 @@
     }
 </script>
 </head>
-<body onload="startTime()">
-<?php include("header.php");?><br>
+<body>
+<?php $activePage = "contact"; include("header.php");?><br>
 <form method="post" enctype="text/plain" id="contact_form">
-    <div class="container bg-light">
+    <div class="container bg-light py-3">
         <h1 class="text-center">Contact me about anything!</h1>
         <label for="name">Name</label>
         <input type="text" class="form-control" name="Name" id="name">
@@ -40,7 +40,7 @@
         </div><br>
         <label for="email">Message</label>
         <textarea cols="10" rows="10" class="form-control" id="message" name="message"></textarea><br>
-        <button type="submit" class="btn btn-primary">Send E-Mail</button>  
+        <button type="submit" class="btn btn-dark">Send E-Mail</button>  
     </div>
 </form>
     <?php include("footer.php");?>
