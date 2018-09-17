@@ -13,6 +13,23 @@
 <div class="container">
 <?php 
 include("config.php");
+
+if(isset($_GET['status'], $_GET['message'])){
+    if($_GET['status'] == 'success') {
+        echo '<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Success!</h4>' . 
+  '<p>' .$_GET['message'].'</p>
+  <hr>
+</div>';
+    } elseif ($_GET['status'] == 'error') {
+        echo '<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">OOPS!</h4>' .  
+  '<p>'.$_GET['message'].'</p>
+  <hr>
+</div>';
+    }
+}
+
 $stmt = $con->prepare("SELECT * FROM posts ORDER BY pid");
 $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC); 
